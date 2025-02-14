@@ -15,7 +15,7 @@
     ],
     "sharedGlobals": []
   },
-  "nxCloudId": "679cb20e4cd17c6db1caafac",
+  "nxCloudId": "67af34c4c38216ab7731a636",
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
@@ -27,18 +27,8 @@
         "watchDepsTargetName": "watch-deps"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    }
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } }
   ],
   "defaultProject": "movie-flix",
   "generators": {
@@ -49,13 +39,8 @@
         "linter": "eslint",
         "bundler": "webpack"
       },
-      "component": {
-        "style": "tailwind"
-      },
-      "library": {
-        "style": "tailwind",
-        "linter": "eslint"
-      }
+      "component": { "style": "tailwind" },
+      "library": { "style": "tailwind", "linter": "eslint" }
     }
   }
 }
