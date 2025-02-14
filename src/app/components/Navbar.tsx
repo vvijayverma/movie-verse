@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { menuItems } from "../constants/Keys";
 import navImage from '../../assets/images/TMDB.svg'
