@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+
+/* .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+  } */
+
+  /* Custom scrollbar styling */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.6);
+  border-radius: 50px;
+}
