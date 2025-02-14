@@ -40,10 +40,6 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        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
-        git remote set-url origin https://vvijayverma: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@github.com/vvijayverma/movie-verse.git
-        ssh-keygen -t rsa -b 4096 -C "vvijayverma91@gmail.com"
-
         {/* <div className="hidden md:flex space-x-6">
           <NavLink to="/" className="hover:text-gray-300">
             Login
