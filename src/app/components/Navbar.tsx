@@ -12,7 +12,7 @@ const Navbar = () => {
         <Link to={'/'} className="text-3xl font-bold text-center text-[#9fdaec]">
           <img src={navImage} alt="MV" className="w-[200px] h-[30px]"/>
         </Link>
-        <div className="flex space-x-6 justify-center items-center">
+        <div className="flex space-x-6 pr-6 justify-center items-center">
           {menuItems.map(({ title, links }) => (
             <div
               key={title}
@@ -24,7 +24,7 @@ const Navbar = () => {
                 {title}
               </div>
               {activeDropdown === title && (
-                <div className="absolute left-0 bg-white text-black shadow-lg rounded-lg w-36 py-2">
+                <div className="absolute left-0 bg-white text-black shadow-lg rounded-lg w-32 py-2">
                   {links.map(({ name, path }) => (
                     <NavLink
                       key={name}

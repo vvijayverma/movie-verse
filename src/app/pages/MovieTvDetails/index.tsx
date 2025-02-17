@@ -15,7 +15,7 @@ const MovieTvDetails = () => {
   const { data: MovieAndTvDetail } = useGetDetailsOfMovieAndTvQuery({ category, type }, { refetchOnMountOrArgChange: false, })
   const { data: StarCast } = useGetStarCastQuery({ category, type }, { refetchOnMountOrArgChange: false, })
   const { data: Recommendations } = useGetRecommendationQuery({ category, type }, { refetchOnMountOrArgChange: false, })
-
+   
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [type]);

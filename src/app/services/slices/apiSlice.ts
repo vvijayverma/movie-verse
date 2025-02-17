@@ -67,6 +67,9 @@ export const apiSlice = createApi({
       getKnowFor:builder.query({
         query:(id)=>`person/${id}/combined_credits?language=en-US`,
         keepUnusedDataFor: 300,
+      }),
+      getSearchMovieTv:builder.query({
+        query:(query)=>`search/multi?query=${query}&include_adult=false&language=en-US&page=1'`
       })
     }),
   });
@@ -84,6 +87,7 @@ export const apiSlice = createApi({
     useGetRecommendationQuery,
     useGetPopularPersonsQuery,
     useGetPopularPersonDetailsQuery,
-    useGetKnowForQuery
+    useGetKnowForQuery,
+    useGetSearchMovieTvQuery
   } = apiSlice;
   
